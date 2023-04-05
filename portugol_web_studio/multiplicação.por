@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+		//var
+		inteiro x, y, result
+		
+		//imput
+		escreva("Informe o 1° número: ")
+		leia(x)
+		escreva("Informe o 2° número: ")
+		leia(y)
+		
+		//cálculo
+		result = x * y
+		
+		//output
+		escreva(" A multiplicação dos números é ", result, ".")
+	}
+}
