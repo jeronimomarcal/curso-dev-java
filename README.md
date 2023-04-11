@@ -1,5 +1,5 @@
-# curso_dev_java
-Curso de Desenvolvedor Java Senai Taguatinga DF<br>
+# CURSO - DESENVOLVEDOR JAVA
+Desenvolvedor Java Senai Taguatinga DF<br>
 
 Na pasta "programas_java" estão todos os programas feitos para exercitar a logica de programação orientada a objeto.
 
