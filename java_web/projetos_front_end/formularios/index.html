@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forularios</title>
+</head>
+<body>
+    <h1>Formulario HTML</h1>
+    <hr />
+    <!--form-->
+    <form method="POST"> 
+        <label>Nome:</label><br />
+        <input type="text" placeholder="Informe o nome" maxlength="40"/>
+        <br /><br />
+        <label>Idade</label><br />
+        <input type="number" placeholder="Informe a Idade" max="65" min="18" value="20"/>
+        <br /><br />
+        <label>Data de nascimento:</label><br />
+        <input type="date" />
+        <br /><br />
+        <label>E-mail:</label><br />
+        <input type="email" placeholder="usuario@servidor.com" maxlength="40"/>
+        <br /><br />
+        <label>Senha:</label><br />
+        <input type="password" placeholder="Informe a senha" maxlength="40"/>
+        <br /><br />
+        <label>Gênero:</label><br />
+        <input type="radio" name="genero" value="Masculino" /><span>Masculino</span><br>
+        <input type="radio" name="genero" value="Feminino" /><span>Feminino</span><br>
+        <input type="radio" name="genero" value="Outros" /><span>Outros</span><br>
+        <label>Nivel de escolaridade:</label><br />
+        <select>
+            <option value="">Escolha uma opção...</option>
+            <option value="Nivel fundamental">Nível fundamental</option>
+            <option value="Nivel medio">Nível médio</option>
+            <option value="Nivel superior">Nível superior</option>
+            <option value="Nivel fundamental">Pós graduação</option>
+        </select>
+        <br /><br />
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
