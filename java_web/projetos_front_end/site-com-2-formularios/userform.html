@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro usuario</title>
+</head>
+<body>
+    <h1>Cadastro usuario</h1><br />
+    <strong>Dados pessoais</strong><br /><br />
+
+    <form method="POST"> 
+        <label>Nome:</label><br />
+        <input type="text" placeholder="Informe o nome" maxlength="40"/>
+        <br /><br />
+        <label>CPF:</label><br />
+        <input type="text" placeholder="Informe o CPF" /><br />
+        <label>RG:</label><br />
+        <input type="text" placeholder="Informe o RG" />
+        <br /><br />
+        <label>Data de nascimento:</label><br />
+        <input type="date" />
+        <br /><br />
+        <label>Signo:</label><br />
+        <input type="text" placeholder="Informe o signo" maxlength="40"/>
+        <br /><br />
+
+
+        <label>Gênero:</label><br />
+        <input type="radio" name="genero" value="Masculino" /><span>Masculino</span><br>
+        <input type="radio" name="genero" value="Feminino" /><span>Feminino</span><br>
+        <input type="radio" name="genero" value="Outros" /><span>Outros</span><br>
+        <br>
+
+        <strong>Filiação</strong><br /><br />
+        <label>Nome do Pai:</label><br />
+        <input type="text" placeholder="Informe o nome do Pai" maxlength="40"/>
+        <br /><br />
+        <label>Nome da Mãe:</label><br />
+        <input type="text" placeholder="Informe o nome da Mãe" maxlength="40"/>
+        <br /><br />
+
+        <strong>Online</strong><br /><br />
+   
+        <label>E-mail:</label><br />
+        <input type="email" placeholder="usuario@servidor.com" maxlength="40"/>
+        <br /><br />
+        <label>Senha:</label><br />
+        <input type="password" placeholder="Informe a senha" maxlength="40"/>
+        <br /><br />
+      
+        <strong>Endereço</strong><br /><br />
+        <label>CEP:</label><br />
+        <input type="text" placeholder="Informe o CEP" maxlength="40"/>
+        <br /><br />
+        <label> Endereço:</label><br />
+        <input type="text" placeholder="Informe o Endereço" maxlength="40"/>
+        <br /><br />
+        <label>Número:</label><br />
+        <input type="text" placeholder="Informe o Número" maxlength="40"/>
+        <br /><br />
+        <label>Bairro:</label><br />
+        <input type="text" placeholder="Informe o Bairro" maxlength="40"/>
+        <br /><br />
+        <label>Cidade:</label><br />
+        <input type="text" placeholder="Informe o Cidade" maxlength="40"/>
+        <br /><br />
+        <label>Estado:</label><br />
+        <input type="text" placeholder="Informe o Estado" maxlength="40"/>
+        <br /><br />
+
+        <strong>Telefone</strong><br /><br />
+        <label>Celular:</label><br />
+        <input type="text" placeholder="Informe o Celular" maxlength="40"/>
+        <br /><br />
+        <label>Fixo:</label><br />
+        <input type="text" placeholder="Informe o Telefone Fixo" maxlength="40"/>
+        <br /><br />
+
+        <strong>Caracteristicas Físicas</strong><br /><br />
+        <label>Altura:</label><br />
+        <input type="text" placeholder="Informe a Altura" maxlength="40"/>
+        <br /><br />
+        <label>Peso:</label><br />
+        <input type="text" placeholder="Informe o Peso em KG" maxlength="40"/>
+        <br /><br />
+        <label>Tipo Sanguineo:</label><br />
+        <input type="text" placeholder="Informe o Tipo Sanguineo" maxlength="40"/>
+        <br /><br />
+
+        <strong>Outros</strong><br><br />
+        <label>Cor favorita:</label><br />
+        <input type="text" placeholder="Informe a Cor " maxlength="40"/>
+        <br /><br />
+        
+        <label>Nivel de escolaridade:</label><br />
+        <select>
+            <option value="">Escolha uma opção...</option>
+            <option value="Nivel fundamental">Nível fundamental</option>
+            <option value="Nivel medio">Nível médio</option>
+            <option value="Nivel superior">Nível superior</option>
+        </select>
+        <br /><br />
+        <label>Carteira de motorista:</label><br />
+        <input type="checkbox" name="Habilidades" value="Informática"/><span>A</span><br />
+        <input type="checkbox" name="Habilidades" value="programação"/><span>AB</span><br />
+        <input type="checkbox" name="Habilidades" value="Inglês"/><span>D</span><br />
+        <br />
+
+    </form>
+    <button type="submit">Enviar</button>
+    <a href="/site-com-2-formularios/index.html"><button>Voltar</button></a>
+
+</body>
+</html>
