@@ -5,6 +5,6 @@ Estou animado para iniciar as aulas do curso de desenvolvedor Java no Senai DF, 
 
 Na pasta "programas_java" estão todos os programas feitos para exercitar a logica de programação orientada a objeto.
 
-Os programas com a terminação <b>GUI de "Graphical User Interface", possui interface gráfica simples. Criada utilizando o JOptionPane. <b>
+Os programas com a terminação <b>GUI de "Graphical User Interface", possui interface gráfica simples. Criada utilizando o JOptionPane. <b><b/>
 
 Hoje dia 18/05/2023 começa o grande apredizado sobre o Framework Spring.
