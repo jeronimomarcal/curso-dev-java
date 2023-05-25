@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas Desaparecidas</title>
+    <!-- Importação do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Cadastro de Pessoas Desaparecidas</h1>
+    <form th:action="@{/cadastro}" th:object="${pessoaDesaparecida}" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input class="form-control" type="text" id="nome" th:field="*{nome}" required>
+        </div>
+        <div class="mb-3">
+            <label for="sobrenome" class="form-label">Sobrenome:</label>
+            <input class="form-control" type="text" id="sobrenome" th:field="*{sobrenome}" required>
+        </div>
+        <div class="mb-3">
+            <label for="dataDesaparecimento" class="form-label">Data de Desaparecimento:</label>
+            <input class="form-control" type="text" id="dataDesaparecimento" th:field="*{dataDesaparecimento}" required>
+        </div>
+        <div class="mb-3">
+            <label for="idadeDesaparecimento" class="form-label">Idade na época do desaparecimento:</label>
+            <input class="form-control" type="number" id="idadeDesaparecimento" th:field="*{idadeDesaparecimento}" required>
+        </div>
+        <div class="mb-3">
+            <label for="regiao" class="form-label">Região:</label>
+            <input class="form-control" type="text" id="regiao" th:field="*{regiao}" required>
+        </div>
+        <div class="mb-3">
+            <label for="numeroOcorrencia" class="form-label">Número da Ocorrência:</label>
+            <input class="form-control" type="text" id="numeroOcorrencia" th:field="*{numeroOcorrencia}" required>
+        </div>
+        <div class="mb-3">
+            <label for="dpRegistro" class="form-label">DP Registrado:</label>
+            <input class="form-control" type="text" id="dpRegistro" th:field="*{dpRegistro}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
+<!-- Importação do Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
