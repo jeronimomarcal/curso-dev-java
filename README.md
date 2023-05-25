@@ -7,4 +7,4 @@ Na pasta "programas_java" estão todos os programas feitos para exercitar a logi
 
 Os programas com a terminação <b>GUI de "Graphical User Interface", possui interface gráfica simples. Criada utilizando o JOptionPane. <b><b/>
 
-Hoje dia 18/05/2023 começa o grande apredizado sobre o Framework Spring.
+Hoje dia 18/05/2023 começa o grande apredizado sobre os Frameworks Spring e Hibernate.
