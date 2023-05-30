@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desaparecidos</title>
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link href="imagens/pcdf.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body data-bs-theme="dark">
+    <!-- header -->
+    <header>
+        <nav class="navbar bg-body-tertiary mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="imagens/pcdf.png" alt="Logo" width="24" class="d-inline-block align-text-top" style="margin: 0px 15px;">
+                Desaparecidos no DF
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- conteúdo -->
+    <main>
+        <div class="container">
+            <h1>Cadastro de Livros</h1>
+            <hr class="mb-5" />
+
+            <!-- formulário -->
+            <form action="/livros/cadastrar" method="POST">
+                <div class="row">
+                    <!-- nome -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Primeiro nome" />
+                    </div>
+                    
+                    <!-- sobrenome -->
+                    <div class="col-12 col-md-7 mb-3">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Sobrenome" />
+                    </div>
+                    
+                    <!-- data do desaparecimento -->
+                    <div class="col-12 col-md-3 mb-3">
+                        <label for="diaDesaparecimento" class="form-label">Dia do desaparecimento</label>
+                        <input type="date" class="form-control" id="diaDesaparecimento" name="diaDesaparecimento" />
+                    </div>
+                    
+                    <!-- local do desaparecimento -->
+                    <div class="col-12 col-md-9 mb-3">
+                        <label for="local" class="form-label">Local do desaparecimento</label>
+                        <input type="text" class="form-control" id="local" name="local" placeholder="Local do desaparecimento" />
+                    </div>
+                    
+                    <!-- idade na época do desaparecimento -->
+                    <div class="col-12 col-md-3 mb-3">
+                        <label for="idade" class="form-label">Idade na época do desaparecimento</label>
+                        <input type="number" class="form-control" id="idade" name="idade" min="0" placeholder="Idade" />
+                    </div>
+                    
+                    <!-- ocorrência -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="ocorrencia" class="form-label">Ocorrência</label>
+                        <input type="text" class="form-control" id="ocorrencia" name="ocorrencia" placeholder="Número da ocorrência" />
+                    </div>
+                    
+                    <!-- dp -->
+                    <div class="col-12 col-md-3 mb-5">
+                        <label for="dp" class="form-label">DP</label>
+                        <input type="text" class="form-control" id="dp" name="dp" placeholder="DP" />
+                    </div>
+
+                    <!-- botão -->
+                    <div class="col-12 col-md-3 mb-5">
+                        <button type="submit" class="btn btn-danger">Cadastrar desaparecido</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
