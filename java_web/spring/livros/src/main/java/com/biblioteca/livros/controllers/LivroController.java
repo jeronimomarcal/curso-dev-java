@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -49,5 +50,29 @@ public class LivroController {
 		
 		return mv;
     }
+	
+	@RequestMapping("/confirmarExclusaoLivro/{idLivro}")
+	public ModelAndView confirmarExclusaoLivro(@PathVariable("idLivro") long idLivro) {
+		
+		Livro livro = lr.findByIdLivro(idLivro);
+		
+		ModelAndView mv = new ModelAndView("content/excluir-livro");
+		
+		mv.addObject("livro", livro);
+		
+		return mv;
+	}
+
+	@RequestMapping("/excluirLivro")
+	public String excluirLivro(long idLivro) {
+		
+		Livro livro = lr.findByIdLivro(idLivro);
+		lr.delete(livro);
+		
+		return "redirect:/listar-livros";
+		
+	}
+	
+	
 }
 

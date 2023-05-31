@@ -67,6 +67,17 @@
                     <p><strong>Edição: </strong><span th:text="${livro.edicao}"></span></p>
                     <p><strong>Número de Páginas: </strong><span th:text="${livro.numeroPaginas}"></span></p>
 
+                  <!--Botões alterar e excluir-->
+                  <div class="row mb-5">
+                    <div class="col-2 ">
+                      <a class="btn btn-primary" role="button">Alterar</a>
+                    </div>
+                    <div class="col-1 ">
+                      <a class="btn btn-danger" role="button" th:href="${(#mvc.url('LC#confirmarExclusaoLivro').arg(0, livro.idLivro)).build()}">Excluir</a>
+                    </div>
+                  </div>
+                  <!--Fim dos botões-->
+
                 </div>
             </div>
         </div>
