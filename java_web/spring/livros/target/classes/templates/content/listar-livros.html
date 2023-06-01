@@ -70,7 +70,7 @@
                   <!--Botões alterar e excluir-->
                   <div class="row mb-5">
                     <div class="col-2 ">
-                      <a class="btn btn-primary" role="button">Alterar</a>
+                      <a class="btn btn-primary" role="button" th:href="${(#mvc.url('LC#formAlterarLivro').arg(0, livro.idLivro)).build()}">Alterar</a>
                     </div>
                     <div class="col-1 ">
                       <a class="btn btn-danger" role="button" th:href="${(#mvc.url('LC#confirmarExclusaoLivro').arg(0, livro.idLivro)).build()}">Excluir</a>
